@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --background-color:#142119;
+  --orange:#E35C1C;
+  --Yellow-orange:orange;
+  --Blue:#229BDD;
+  --Green: #05AA42;
+}
+/* body has a width and height of 100% and background-color */
+body{
+ width: 100%;
+  height: 100%;
+  background-color:var(--background-color);
+}
+/* here the grid container is styled */
+.grid-container{
+  display:grid;
+/*   below this line i created the areas which each container will occupy */
+ grid-template-areas: 
+'a a b'
+'c d d'
+'c e e';
+/*   here in line 27 and 28 the columns and rows are given their seperate sizes */
+grid-template-columns:200px 90px 200px;
+grid-template-rows:210px 90px 120px;
+gap:15px;
+padding:20px;
+justify-content:center;
+margin-top:80px;				  
+}
+.div{
+  padding: 1rem;
+}
+/* here each boxes are assigned to their respective areas */
+.one{
+  grid-area: a;
+  background-color: var(--Yellow-orange);
+}
+.two{
+  grid-area: b;
+  background-color: var(--orange);
+}
+.three{
+  grid-area: c;
+  background-color: var(--Green);
+}
+.four{
+  grid-area: d;
+  background-color: var(--Blue);
+}
+.five{
+  grid-area: e;
+  background-color: var(--Blue);
+}
+/* simple media query to make it mobile responsive */
+@media only screen and (max-width:375px){
+  .grid-container{
+     display: flex;
+     flex-direction: column;	
+     width: 100%;		  
+  }
+  .grid{
+      width: 100%;
+  }
+  body{
+      padding: 2rem;
+  }
+
+}
