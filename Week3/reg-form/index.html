@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="content">
+    <header>
+      <h1>Registration Form</h1>
+    </header>
+    <main>
+      <form action="login.html" method="post">
+        <input id="lname" class="input" type="text" placeholder="Enter your first name" />
+        <br>
+
+        <input id="lname" class="input" type="text" placeholder="Enter your last name" />
+        <br>
+
+
+        <input id="email" class="input" type="email" placeholder="Email address" />
+        <br>
+
+
+        <input id="phone" class="input" type="number" placeholder="+234" />
+        <br>
+
+        <div class="gen">
+          <!-- <label class="">Gender</label> -->
+          <select id="gender" name="Gender">
+            <option value="select">Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+        <br>
+        <!-- <span class="dob">Date of Birth</span> -->
+        <input type="text" id="date" onclick="this.type='date'" onblur="this.type='text'" placeholder="Date of Birth" class="textbox-n" name="myDate" />
+        <br>
+        
+<input type="color" id="color" placeholder="Favorite Color" class="textbox-n" name="fav-color" />
+        <br>
+        
+        <!-- <label class="">Gender</label> <br> -->
+        <!-- <input id="favcolor" class="fav" type="color" /> -->
+        <br>
+
+
+        <button>Submit</button>
+    </main>
+    </form>
+
+    <footer>
+      <p>
+        Already have an account? <a href="login.html">Sign in</a>
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>

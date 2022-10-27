@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+background: url(login_img.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+font-weight: bold;
+font-family: 'Times New Roman', Times, serif;
+line-height: 1.4;
+color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+}
+
+.login-details{
+  width: 1200px;
+  margin: 45px auto
+}
+
+h2{
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 40px;
+}
+form{
+  text-align: center;
+}
+
+p{
+  font-size: 20px;
+  padding: 10px;
+}
+
+input {
+  width: 300px;
+  height: 43px;
+  margin: 10px;
+  outline: none;
+  font-size: 16px;
+}
+
+::placeholder {
+  padding-left: 16px;
+  opacity: .5;
+  font-size: 16px;
+}
+
+button {
+  width: 300px;
+  height: 43px;
+  margin: 10px;
+  font-size: 18px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  transition: ease .5s;
+}
+
+button:link{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover{
+  text-decoration: none;
+   background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
